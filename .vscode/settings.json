@@ -1,0 +1,7 @@
+{
+  "yaml.schemas": {
+    "bases/schama.json": [
+      "bases/**/*.yml"
+    ]
+  }
+}
