@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "terms": {
+      "type": "object",
+      "properties": {
+        "permissions": {
+          "type": "object",
+          "patternProperties": {
+            "^.*$": {
+              "$ref": "#/definitions/summary"
+            }
+          }
+        },
+        "conditions": {
+          "type": "object",
+          "patternProperties": {
+            "^.*$": {
+              "$ref": "#/definitions/summary"
+            }
+          }
+        },
+        "limitations": {
+          "type": "object",
+          "patternProperties": {
+            "^.*$": {
+              "$ref": "#/definitions/summary"
+            }
+          }
+        }
+      },
+      "required": ["permissions", "conditions", "limitations"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["id", "name", "description", "terms"],
+  "definitions": {
+    "summary": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "label": { "type": "string" }
+      },
+      "required": ["description", "label"],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

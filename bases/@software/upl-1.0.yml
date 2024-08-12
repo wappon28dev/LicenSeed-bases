@@ -1,0 +1,65 @@
+id: "@software/UPL-1.0"
+name: Universal Permissive License v1.0
+description: 寛容な、OSIおよびFSFに承認された、GPLと互換性のあるライセンスで、著作権表示と短い形式のリンクだけで属性を明示的に許可しています。特許権の明示的な許諾を含みます。ライセンスされた作品とその改変は、異なる条件で、ソースコードなしで配布できます。また、特許許諾は、貢献者ライセンス契約として使用するために、より大きな作品にもオプションで拡張できます。
+summary:
+  permissions:
+    - type: TERM
+      value: commercial-use
+    - type: TERM
+      value: modifications
+    - type: TERM
+      value: distribution
+    - type: TERM
+      value: patent-use
+    - type: TERM
+      value: private-use
+  limitations:
+    - type: TERM
+      value: liability
+    - type: TERM
+      value: warranty
+  conditions:
+    - type: TERM
+      value: include-copyright
+variables:
+  - key: year
+    description: ""
+  - key: fullname
+    description: ""
+body: |-
+  .
+  Copyright (c) [year] [fullname]
+
+  The Universal Permissive License (UPL), Version 1.0
+
+  Subject to the condition set forth below, permission is hereby granted to any
+  person obtaining a copy of this software, associated documentation and/or data
+  (collectively the "Software"), free of charge and under any and all copyright
+  rights in the Software, and any and all patent rights owned or freely
+  licensable by each licensor hereunder covering either (i) the unmodified
+  Software as contributed to or provided by such licensor, or (ii) the Larger
+  Works (as defined below), to deal in both
+
+  (a) the Software, and
+  (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if
+  one is included with the Software (each a "Larger Work" to which the Software
+  is contributed by such licensors),
+
+  without restriction, including without limitation the rights to copy, create
+  derivative works of, display, perform, and distribute the Software and make,
+  use, sell, offer for sale, import, export, have made, and have sold the
+  Software and the Larger Work(s), and to sublicense the foregoing rights on
+  either these or other terms.
+
+  This license is subject to the following condition:
+  The above copyright notice and either this complete permission notice or at
+  a minimum a reference to the UPL must be included in all copies or
+  substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.

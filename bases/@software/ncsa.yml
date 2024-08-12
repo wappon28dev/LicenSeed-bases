@@ -1,0 +1,66 @@
+id: "@software/NCSA"
+name: University of Illinois/NCSA Open Source License
+description: University of Illinois/NCSAオープンソースライセンス、またはUIUCライセンスは、MIT/X11ライセンスとBSD 3-clause Licenseに基づく許諾型フリーソフトウェアライセンスです。その条件には、著作権とライセンスの通知をソースおよびバイナリ配布の両方で保存すること、および派生製品を促進または支持するために著者またはプロジェクト組織の名前を使用することを禁止することが含まれます。
+summary:
+  permissions:
+    - type: TERM
+      value: commercial-use
+    - type: TERM
+      value: modifications
+    - type: TERM
+      value: distribution
+    - type: TERM
+      value: private-use
+  limitations:
+    - type: TERM
+      value: liability
+    - type: TERM
+      value: warranty
+  conditions:
+    - type: TERM
+      value: include-copyright
+variables:
+  - key: year
+    description: ""
+  - key: fullname
+    description: ""
+  - key: project
+    description: ""
+  - key: projecturl
+    description: ""
+body: |-
+  .
+  University of Illinois/NCSA Open Source License
+
+  Copyright (c) [year] [fullname]. All rights reserved.
+
+  Developed by: [project]
+                [fullname]
+                [projecturl]
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal with the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions:
+
+  * Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimers.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimers in the
+    documentation and/or other materials provided with the distribution.
+
+  * Neither the names of [fullname], [project] nor the names of its
+    contributors may be used to endorse or promote products derived from
+    this Software without specific prior written permission.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  CONTRIBUTORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS WITH
+  THE SOFTWARE.

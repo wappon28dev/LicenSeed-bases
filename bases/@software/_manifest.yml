@@ -1,0 +1,58 @@
+id: "@software"
+name: ソフトウェア
+description: ソフトウェアのライセンスと利用条件を定義します。
+terms:
+  permissions:
+    commercial-use:
+      description: ライセンスされた素材および派生物を商業目的で使用することができます。
+      label: 商業利用
+    distribution:
+      description: ライセンスされた素材を配布することができます。
+      label: 配布
+    modifications:
+      description: ライセンスされた素材を変更することができます。
+      label: 改変
+    private-use:
+      description: ライセンスされた素材を私的に使用し、変更することができます。
+      label: 私的利用
+    patent-use:
+      description: このライセンスは、コントリビュータからの特許権を明示的に認めるものです。
+      label: 特許利用
+  conditions:
+    include-copyright:
+      description: ライセンスされた資料には、ライセンスと著作権表示のコピーを含める必要があります。
+      label: ライセンスと著作権表示
+    include-copyright--source:
+      description: ライセンスされた資料には、ソース形式でライセンスと著作権表示のコピーを含める必要がありますが、バイナリには必要ありません。
+      label: ライセンスと著作権表示（ソース）
+    document-changes:
+      description: ライセンスされた資料に対する変更は文書化する必要があります。
+      label: 変更の記録
+    disclose-source:
+      description: ライセンスされた資料が配布されるときには、ソースコードを提供する必要があります。
+      label: ソースコードの開示
+    network-use-disclose:
+      description: ネットワークを介してライセンスされた資料にアクセスするユーザーには、ソースコードのコピーを受け取る権利が与えられます。
+      label: ネットワーク利用は配布
+    same-license:
+      description: ライセンスされた資料を配布する際には、変更点は同じライセンスの下でリリースする必要があります。場合によっては、類似または関連するライセンスを使用することができます。
+      label: 同一ライセンス
+    same-license--file:
+      description: ライセンスされた資料を配布する際には、既存のファイルの変更点は同じライセンスの下でリリースする必要があります。場合によっては、類似または関連するライセンスを使用することができます。
+      label: 同一ライセンス（ファイル）
+    same-license--library:
+      description: ライセンスされた資料を配布する際には、変更点は同じライセンスの下でリリースする必要があります。場合によっては、類似または関連するライセンスを使用することができます。また、ライセンスされた資料をライブラリとして使用する作品には、この条件が適用されない場合があります。
+      label: 同一ライセンス（ライブラリ）
+  limitations:
+    trademark-use:
+      description: このライセンスは、商標権を付与しないことを明示的に述べています。このような声明がないライセンスは、おそらく暗黙の商標権を付与しないと思われます。
+      label: 商標利用
+    liability:
+      description: このライセンスには責任制限が含まれています。
+      label: 責任制限
+    patent-use:
+      description: このライセンスは、貢献者の特許に関する権利を明示的に付与しないことを明示しています。
+      label: 特許利用
+    warranty:
+      description: このライセンスは、明示的にいかなる保証も提供しないことを明示しています。
+      label: 保証
