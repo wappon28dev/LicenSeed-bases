@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "summary": {
+      "$ref": "#/definitions/Summary"
+    },
+    "variables": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Variable" }
+    },
+    "body": { "type": "string" }
+  },
+  "required": ["id", "name", "description", "summary", "variables", "body"],
+  "additionalProperties": false,
+  "definitions": {
+    "Summary": {
+      "type": "object",
+      "properties": {
+        "permissions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/SummaryEntry" }
+        },
+        "limitations": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/SummaryEntry" }
+        },
+        "conditions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/SummaryEntry" }
+        }
+      },
+      "required": ["permissions", "limitations", "conditions"],
+      "additionalProperties": false
+    },
+    "SummaryEntry": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string", "enum": ["TERM", "MARKDOWN"] },
+        "value": { "type": "string" }
+      },
+      "required": ["type", "value"],
+      "additionalProperties": false
+    },
+    "Variable": {
+      "type": "object",
+      "properties": {
+        "key": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["key", "description"],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,7 +1,11 @@
 {
   "yaml.schemas": {
-    "bases/schama.json": [
-      "bases/**/*.yml"
-    ]
+    "bases/schemas/base.json": [
+      "bases/**/*.yml",
+      "!bases/**/_manifest.yml",
+    ],
+    "bases/schemas/manifest.json": [
+      "bases/**/_manifest.yml",
+    ],
   }
 }
