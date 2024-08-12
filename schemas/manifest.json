@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
-    "id": { "type": "string" },
+    "group": { "type": "string" },
     "name": { "type": "string" },
     "description": { "type": "string" },
     "terms": {
@@ -37,7 +37,7 @@
       "additionalProperties": false
     }
   },
-  "required": ["id", "name", "description", "terms"],
+  "required": ["group", "name", "description", "terms"],
   "definitions": {
     "summary": {
       "type": "object",

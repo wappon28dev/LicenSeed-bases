@@ -1,4 +1,4 @@
-id: "@software"
+group: "@software"
 name: ソフトウェア
 description: ソフトウェアのライセンスと利用条件を定義します。
 terms:
