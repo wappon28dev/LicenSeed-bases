@@ -4,19 +4,20 @@ description: 著作権およびライセンスの通知の保存を要求する�
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: warranty
+      key: warranty
   conditions: []
+  notes: null
 variables:
   - key: year
     description: ""

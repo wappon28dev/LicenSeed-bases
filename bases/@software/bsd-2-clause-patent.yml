@@ -4,23 +4,24 @@ description: "This license is designed to provide: a) a simple permissive licens
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: patent-use
+      key: patent-use
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: warranty
+      key: warranty
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
+  notes: null
 variables:
   - key: year
     description: ""

@@ -4,29 +4,30 @@ description: CEA、CNRS、Inria の3つのフランスの公共研究機関に�
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: private-use
+      key: private-use
     - type: TERM
-      value: patent-use
+      key: patent-use
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: warranty
+      key: warranty
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
     - type: TERM
-      value: network-use-disclose
+      key: network-use-disclose
     - type: TERM
-      value: disclose-source
+      key: disclose-source
     - type: TERM
-      value: same-license
+      key: same-license
+  notes: null
 variables:
   - key: a
     description: ""

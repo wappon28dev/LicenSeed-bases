@@ -2,6 +2,7 @@ import { join } from "path";
 import { Glob } from "bun";
 import { parse, stringify } from "yaml";
 import { load } from "cheerio";
+import type { SeedBase } from "./assets/bindings";
 
 export type License = {
   title: string;
@@ -19,36 +20,11 @@ export type License = {
   };
 };
 
-export type SeedDef = {
-  id: string;
-  name: string;
-  description: string;
-  summary: {
-    permissions: Array<{
-      type: string;
-      value: string;
-    }>;
-    limitations: Array<{
-      type: string;
-      value: string;
-    }>;
-    conditions: Array<{
-      type: string;
-      value: string;
-    }>;
-  };
-  variables: Array<{
-    key: string;
-    description: string;
-  }>;
-  body: string;
-};
-
-function license2seedDef(
+function license2seedBase(
   license: License,
   variables: string[],
   body: string,
-): SeedDef {
+): SeedBase {
   const { title, description, permissions, conditions, limitations } = license;
 
   return {
@@ -56,18 +32,19 @@ function license2seedDef(
     name: title,
     description: description.replaceAll("\n", ""),
     summary: {
-      permissions: permissions.map((value) => ({
+      permissions: permissions.map((key) => ({
         type: "TERM",
-        value,
+        key,
       })),
-      limitations: limitations.map((value) => ({
+      limitations: limitations.map((key) => ({
         type: "TERM",
-        value,
+        key,
       })),
-      conditions: conditions.map((value) => ({
+      conditions: conditions.map((key) => ({
         type: "TERM",
-        value,
+        key,
       })),
+      notes: null,
     },
     variables: variables.map((v) => ({
       key: v,
@@ -102,12 +79,12 @@ async function process(fileName: string): Promise<void> {
     (body.match(/\[.*?\]/g) ?? []).map((v) => v.slice(1, -1)),
   );
 
-  const seedDef = license2seedDef(parse(meta), variables, body);
+  const seedBase = license2seedBase(parse(meta), variables, body);
 
   const modifiedSeedDef = {
-    ...seedDef,
-    description: anchor2text(seedDef.description),
-  } as const satisfies SeedDef;
+    ...seedBase,
+    description: anchor2text(seedBase.description),
+  } as const satisfies SeedBase;
 
   await Bun.write(
     join(

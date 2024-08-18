@@ -4,23 +4,24 @@ description: オープンフォントライセンス（OFL）は、SIL Internati
 summary:
   permissions:
     - type: TERM
-      value: private-use
+      key: private-use
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: warranty
+      key: warranty
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
     - type: TERM
-      value: same-license
+      key: same-license
+  notes: null
 variables:
   - key: year
     description: ""

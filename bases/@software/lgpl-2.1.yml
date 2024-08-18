@@ -4,27 +4,28 @@ description: 主にソフトウェアライブラリに使用されるGNU LGPL�
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: warranty
+      key: warranty
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
     - type: TERM
-      value: disclose-source
+      key: disclose-source
     - type: TERM
-      value: document-changes
+      key: document-changes
     - type: TERM
-      value: same-license--library
+      key: same-license--library
+  notes: null
 variables: []
 body: |-
   .

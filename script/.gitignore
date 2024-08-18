@@ -176,3 +176,4 @@ dist
 
 out/
 assets/_licenses/
+assets/bindings.ts

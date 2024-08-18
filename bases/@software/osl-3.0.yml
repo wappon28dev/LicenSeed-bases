@@ -4,33 +4,34 @@ description: OSL 3.0は、リンクされた作品に対する相互ライセン
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: patent-use
+      key: patent-use
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: trademark-use
+      key: trademark-use
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: warranty
+      key: warranty
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
     - type: TERM
-      value: disclose-source
+      key: disclose-source
     - type: TERM
-      value: document-changes
+      key: document-changes
     - type: TERM
-      value: network-use-disclose
+      key: network-use-disclose
     - type: TERM
-      value: same-license
+      key: same-license
+  notes: null
 variables: []
 body: |-
   .

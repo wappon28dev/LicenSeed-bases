@@ -4,25 +4,26 @@ description: 商標権を付与しないことを明示的に述べた、Apache 
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: patent-use
+      key: patent-use
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: trademark-use
+      key: trademark-use
     - type: TERM
-      value: warranty
+      key: warranty
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
+  notes: null
 variables:
   - key: Year
     description: ""

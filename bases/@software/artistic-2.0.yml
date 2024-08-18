@@ -4,27 +4,28 @@ description: Perlコミュニティによって強く支持されているArtist
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: patent-use
+      key: patent-use
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: trademark-use
+      key: trademark-use
     - type: TERM
-      value: warranty
+      key: warranty
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
     - type: TERM
-      value: document-changes
+      key: document-changes
+  notes: null
 variables: []
 body: |-
   .

@@ -1,23 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SeedBase",
   "type": "object",
   "properties": {
     "id": { "type": "string" },
     "name": { "type": "string" },
     "description": { "type": "string" },
     "summary": {
-      "$ref": "#/definitions/Summary"
-    },
-    "variables": {
-      "type": "array",
-      "items": { "$ref": "#/definitions/Variable" }
-    },
-    "body": { "type": "string" }
-  },
-  "required": ["id", "name", "description", "summary", "variables", "body"],
-  "additionalProperties": false,
-  "definitions": {
-    "Summary": {
       "type": "object",
       "properties": {
         "permissions": {
@@ -31,25 +20,55 @@
         "conditions": {
           "type": "array",
           "items": { "$ref": "#/definitions/SummaryEntry" }
+        },
+        "notes": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/definitions/SummaryEntry" }
         }
       },
       "required": ["permissions", "limitations", "conditions"],
       "additionalProperties": false
     },
+    "variables": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Variable" }
+    },
+    "body": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "name", "description", "summary", "variables", "body"],
+  "additionalProperties": false,
+  "definitions": {
     "SummaryEntry": {
       "type": "object",
       "properties": {
-        "type": { "type": "string", "enum": ["TERM", "MARKDOWN"] },
-        "value": { "type": "string" }
+        "type": {
+          "type": "string",
+          "enum": ["TERM", "MARKDOWN"]
+        },
+        "key": {
+          "type": "string"
+        },
+        "title": {
+          "type": ["string", "null"]
+        },
+        "body": {
+          "type": ["string", "null"]
+        }
       },
-      "required": ["type", "value"],
+      "required": ["type"],
       "additionalProperties": false
     },
     "Variable": {
       "type": "object",
       "properties": {
-        "key": { "type": "string" },
-        "description": { "type": "string" }
+        "key": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
       },
       "required": ["key", "description"],
       "additionalProperties": false

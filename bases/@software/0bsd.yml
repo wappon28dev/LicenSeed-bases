@@ -4,19 +4,20 @@ description: BSD Zero Clauseライセンスは、BSD 2-Clauseライセンスよ�
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: warranty
+      key: warranty
   conditions: []
+  notes: null
 variables:
   - key: year
     description: ""

@@ -4,23 +4,24 @@ description: ソフトウェアの変更なしでの使用または配布に制�
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: private-use
+      key: private-use
   limitations: []
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
     - type: TERM
-      value: document-changes
+      key: document-changes
     - type: TERM
-      value: disclose-source
+      key: disclose-source
     - type: TERM
-      value: same-license
+      key: same-license
+  notes: null
 variables:
   - key: project
     description: ""

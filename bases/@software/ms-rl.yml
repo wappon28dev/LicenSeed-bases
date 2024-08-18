@@ -4,27 +4,28 @@ description: このライセンスは、Microsoft Public Licenseに類似した�
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: patent-use
+      key: patent-use
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: warranty
+      key: warranty
     - type: TERM
-      value: trademark-use
+      key: trademark-use
   conditions:
     - type: TERM
-      value: disclose-source
+      key: disclose-source
     - type: TERM
-      value: include-copyright
+      key: include-copyright
     - type: TERM
-      value: same-license--file
+      key: same-license--file
+  notes: null
 variables: []
 body: |-
   .

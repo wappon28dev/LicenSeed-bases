@@ -4,15 +4,16 @@ description: もっとも簡単なライセンスです。ユーザーには、�
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: private-use
+      key: private-use
   limitations: []
   conditions: []
+  notes: null
 variables: []
 body: |-
   .

@@ -4,23 +4,24 @@ description: 特許付与条項を持つオープンソースライセンス。
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: patent-use
+      key: patent-use
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: warranty
+      key: warranty
     - type: TERM
-      value: trademark-use
+      key: trademark-use
   conditions:
     - type: TERM
-      value: include-copyright
+      key: include-copyright
+  notes: null
 variables: []
 body: |-
   .

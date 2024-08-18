@@ -4,23 +4,24 @@ description: 短い許諾型ライセンスで、GPLと互換性があります�
 summary:
   permissions:
     - type: TERM
-      value: commercial-use
+      key: commercial-use
     - type: TERM
-      value: modifications
+      key: modifications
     - type: TERM
-      value: distribution
+      key: distribution
     - type: TERM
-      value: private-use
+      key: private-use
   limitations:
     - type: TERM
-      value: liability
+      key: liability
     - type: TERM
-      value: warranty
+      key: warranty
   conditions:
     - type: TERM
-      value: include-copyright--source
+      key: include-copyright--source
     - type: TERM
-      value: document-changes
+      key: document-changes
+  notes: null
 variables:
   - key: year
     description: ""
