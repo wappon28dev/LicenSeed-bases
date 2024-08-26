@@ -27,8 +27,6 @@ summary:
       key: document-changes
   notes: null
 variables:
-  - key: ""
-    description: ""
   - key: yyyy
     description: ""
   - key: name of copyright owner

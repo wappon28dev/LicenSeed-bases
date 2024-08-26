@@ -76,7 +76,9 @@ async function process(fileName: string): Promise<void> {
   const body = _body.join("");
 
   const variables = distinct(
-    (body.match(/\[.*?\]/g) ?? []).map((v) => v.slice(1, -1)),
+    (body.match(/\[.*?\]/g) ?? [])
+      .map((v) => v.slice(1, -1))
+      .filter((v) => v.length > 0),
   );
 
   const seedBase = license2seedBase(parse(meta), variables, body);
