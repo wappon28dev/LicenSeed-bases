@@ -4,6 +4,7 @@ description: 作者の著作権を含む極力多くの権利を手放し、パ�
 summary:
   permissions:
     - type: MARKDOWN
+      title: 著作権なし
       body: その作品について世界全地域において著作権法上認められる、その者が持つすべての権利（その作品に関する権利や隣接する権利を含む。）を、法令上認められる最大限の範囲で放棄して、パブリック・ドメインに提供する。
   conditions: []
   limitations: []
