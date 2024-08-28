@@ -1,0 +1,30 @@
+group: "@general"
+name: 汎用ライセンス (CC)
+description: |-
+  作品および素材の種類を問わず適用できます。
+  ライセンス文とシード文の出典: https://creativecommons.org/
+terms:
+  permissions:
+    share:
+      label: 共有
+      description: どのようなメディアやフォーマットでも資料を複製したり、再配布することを許可します。
+    adapt:
+      label: 翻案
+      description: マテリアルをリミックスしたり、改変したり、別の作品のベースにしたりすることを許可します。
+  conditions:
+    attribution:
+      label: 表示
+      description: 適切なクレジットを表示し、ライセンスへのリンクを提供し、変更があったらその旨を示さなければなりません。
+    share-alike:
+      label: 継承
+      description: この資料をリミックスしたり、改変したり、加工した場合には、あなたの貢献部分を元の作品と同じライセンスの下に頒布しなければなりません。
+  limitations:
+    non-commercial:
+      label: 非営利
+      description: 営利目的でこの資料を利用してはなりません。
+    no-additional-restrictions:
+      label: 追加的な制約の禁止
+      description: このライセンスが他の者に許諾することを法的に制限するようないかなる法的規定も技術的手段も適用してはなりません。
+    no-derivatives:
+      label: 改変禁止
+      description: この資料をリミックスし、改変し、あるいはこの資料をベースに新しい作品を作った場合、改変された資料を頒布してはなりません。

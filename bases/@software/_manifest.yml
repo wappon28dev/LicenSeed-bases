@@ -1,6 +1,7 @@
 group: "@software"
 name: ソフトウェア
-description: ソフトウェアのライセンスと利用条件を定義します。
+description: |-
+  ライセンス文とシード文の出典: https://github.com/github/choosealicense.com, https://github.com/shogo82148/choosealicense.shogo82148.com
 terms:
   permissions:
     commercial-use:
